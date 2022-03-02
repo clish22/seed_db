@@ -1,0 +1,24 @@
+{
+  "name": "seed_db",
+  "version": "1.0.0",
+  "description": "Seeding data base",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clish22/seed_db.git"
+  },
+  "author": "Callum Lisha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clish22/seed_db/issues"
+  },
+  "homepage": "https://github.com/clish22/seed_db#readme",
+  "dependencies": {
+    "chance": "^1.1.8",
+    "mongodb": "^4.4.0"
+  },
+  "type": "module"
+}
