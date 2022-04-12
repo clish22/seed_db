@@ -2,12 +2,12 @@ import { MongoClient } from 'mongodb';
 import Chance from 'chance';
 
 // Connect to Atlas
-// const client = new MongoClient(
-//   'mongodb+srv://clish22:test123@cluster0.drzfo.mongodb.net/test?retryWrites=true&w=majority'
-// );
+const client = new MongoClient(
+  'mongodb+srv://clish22:test123@cluster0.drzfo.mongodb.net/test?retryWrites=true&w=majority'
+);
 
 // Connect to Local
-const client = new MongoClient('mongodb://localhost:27017');
+// const client = new MongoClient('mongodb://localhost:27017');
 
 // Instantiate Chance so it can be used
 const chance = new Chance();
@@ -15,7 +15,7 @@ const chance = new Chance();
 // Database Name
 const dbName = 'seeds';
 
-const documentCount = 20;
+const documentCount = 30;
 const users = [];
 
 for (let i = 0; i < documentCount; i++) {
@@ -24,6 +24,7 @@ for (let i = 0; i < documentCount; i++) {
     age: chance.age(),
     address: chance.address(),
     favouriteColor: chance.color({ format: 'hex' }),
+    stars: 0,
   };
   users.push(user);
 }
